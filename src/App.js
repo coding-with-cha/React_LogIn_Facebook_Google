@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-
+import GoogleLogin from "./components/GoogleLogin";
+import FacebookLogin from "./components/FacebookLogin";
+import image from './waiting-room.png'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GoogleLogin />
+      <br/><br/>
+      <hr/>
+      <br/><br/>
+      <FacebookLogin />
+      <br/><br/>
+      <img src={image} style={{width: '400px', height: '500px', paddingTop:"10%"}}/>
     </div>
   );
 }
